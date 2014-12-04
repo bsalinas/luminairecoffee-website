@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+<title>Luminaire Coffee</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Luminaire Coffee Equipment - Engineering for Specialty Coffee">
+<meta name="author" content="Luminaire Coffee">
+
+<!-- Le styles -->
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="/css/docs.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="favicon.ico">
+<script src="/js/jquery-1.9.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.btn[data-toggle=collapse]').click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        if($(this).hasClass('expanded')){
+          $('.nav-collapse.collapse.in').hide().removeClass('in');
+          $(this).removeClass('expanded');  
+        }
+        else{
+          $(this).addClass('expanded');
+          $('.nav-collapse').show();
+          $('.nav-collapse').addClass('in');
+          $('.nav-collapse').css('height','168px');
+        }
+        
+
+    });
+    // side bar
+    $('.bs-docs-sidenav').affix({
+      offset: {
+        top: function () { 
+          return $(window).width() <= 980 ? 280 : 220;
+        }
+      , bottom: 220
+      }
+    });
+  });
+</script>
+    </head>
+    <body data-spy="scroll" data-target=".bs-docs-sidebar">
+      <div class="navbar navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a href="./index.php"><img src="img/luminaire_logo_large.png" class="visible-phone" style="display: inline; width: 100px; margin-left:10px; margin-top:5px; float: left;"></img></a>
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a class="brand hidden-phone" href="/"></a></li>
+          
+            
+              <li class="">
+            
+            <a href="/projects/">Projects</a></li>
+          
+            
+              <li class="">
+            
+            <a href="/services/">Services</a></li>
+          
+            
+              <li class="">
+            
+            <a href="/team/">Team</a></li>
+          
+            
+              <li class="">
+            
+            <a href="mailto:info@luminairecoffee.com">Contact Us</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+      <header class="jumbotron masthead" id="overview">
+      <div class="container">
+        <h1>Luminaire Coffee</h1>
+        <p class="lead">Engineering and design for the specialty coffee industry.</p>
+      </div>
+     </header>
+     <div class="container">
+       <div class="marketing">
+    <div class="marketing-bullet row-fluid">
+      <div class="span4">
+        <h2>A passion for coffee.</h2>
+        <p>We've fallen down the rabbit hole of coffee and have joined the quest for the ultimate cup. We get excited about an exceptional pour over, a well-pulled shot, and the newest brewing techniques and gadgets. We get it.</p>
+      </div>
+      <div class="span4">
+        <h2>World-class engineering.</h2>
+        <p>With past jobs at some of the top technology companies in the world, Luminaire has extensive experience in taking great ideas to usable prototypes and beyond.</p>
+      </div>
+      <div class="span4">
+        <h2>Forward-thinking design.</h2>
+        <p>Technology alone doesn't make a better cup of coffee. We focus on a deep understanding of the problem to develop systems that go beyond the latest trends in order to evolve the craft.</p>
+      </div>
+    </div>
+      <hr class="featurette-divider"> 
+    <div class"featurette">
+    <h2 class="featurette-heading">What can we do for you?</h2>
+    <p class="lead">From ideation to product R&D, we are ready to help.</p>
+    <a href="/projects/" class="btn btn-large btn-inverse">Check Out Our Work</a>
+    <!-- <a href="mailto:info@luminairecoffee.com" class="btn btn-large btn-inverse">Let's Talk.</a> -->
+  </div>
+ </div>
+      </div>
+    </body>
+    <footer>
+      <footer class="footer">
+  <div class="container">
+    <p>| Boston, MA | Seattle, WA |</p>
+    <p>Designed and built by the Luminaire Coffee team with help from <a href="http://getbootstrap.com/">Twitter Bootstrap</a> and <a href="http://jekyllrb.com">Jekyll</a>.
+    </p>
+  </div>
+</footer>	
+    </footer>
+
+</html>
+
