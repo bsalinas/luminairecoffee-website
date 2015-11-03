@@ -183,6 +183,12 @@ section h1{
 .page-header{
   margin-bottom:15px;
 }
+#team .page-header{
+  margin-top:0!important;
+}
+#team h2{
+  margin-top:0!important;
+}
 .lead{
   font-size:18px;
 }

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+<title>Luminaire Coffee</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Luminaire Coffee Equipment - Engineering for Specialty Coffee">
+<meta name="author" content="Luminaire Coffee">
+
+<!-- Le styles -->
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="/css/docs.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="favicon.ico">
+<script src="/js/jquery-1.9.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.btn[data-toggle=collapse]').click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        if($(this).hasClass('expanded')){
+          $('.nav-collapse.collapse.in').hide().removeClass('in');
+          $(this).removeClass('expanded');  
+        }
+        else{
+          $(this).addClass('expanded');
+          $('.nav-collapse').show();
+          $('.nav-collapse').addClass('in');
+          $('.nav-collapse').css('height','168px');
+        }
+        
+
+    });
+    // side bar
+    $('.bs-docs-sidenav').affix({
+      offset: {
+        top: function () { 
+          return $(window).width() <= 980 ? 280 : 220;
+        }
+      , bottom: 220
+      }
+    });
+  });
+</script>
+    </head>
+    <body data-spy="scroll" data-target=".bs-docs-sidebar">
+      <div class="navbar navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a href="/"><img src="img/luminaire_logo_large.png" class="visible-phone" style="display: inline; width: 100px; margin-left:10px; margin-top:5px; float: left;"></img></a>
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a class="brand hidden-phone" href="/"></a></li>
+          
+            
+              <li class="">
+            
+            <a href="/projects/">Projects</a></li>
+          
+            
+              <li class="">
+            
+            <a href="/services/">Services</a></li>
+          
+            
+              <li class="">
+            
+            <a href="/team/">Team</a></li>
+          
+            
+              <li class="active">
+            
+            <a href="/careers/">Careers</a></li>
+          
+            
+              <li class="">
+            
+            <a href="mailto:info@luminairecoffee.com">Contact Us</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+      <header class="jumbotron subhead" id="overview">
+      <div class="container">
+        <h1>Do you want to work with us?</h1>
+        <p class="lead"></p>
+      </div>
+     </header>
+     <div class="container">
+      <div class="row-fluid">
+    <div class="span9">
+    <h2>Open Positions</h2>
+    <p>Luminaire is looking to hire a few new team members to join our growing team. If you think you should join the company but don't see the perfect position for you, send us a note at <a href="mailto:careers@luminairecoffee.com">careers@luminairecoffee.com</a> and we'll talk.</p>
+    </div>
+</div>
+<div class="row-fluid">
+  	<div class="span9">
+    	<h3>Electrical Engineer</h3>
+        <h5>Location: Seattle (for the right candidate, Boston or Austin might be a possibility)</h5>
+    	<p>
+    		Our typical project goes a little bit like this: One of our partners will call us in for a meeting when there is a new product concept. From that point on, we will be involved in every step of turning that idea into a physical product. This involves
+    		<ul>
+    		<li>discussing design tradeoffs, technical requirements and user needs,</li>
+    		<li>proposing and prototyping potential electrical solutions,</li>
+    		<li>integrating and testing prototypes</li>
+    		<li>designing the user experience in firmware</li>
+            <li>more testing of the implemented features</li>
+    		<li>developing test equipment</li>
+            <li>overseeing the electronics manufacturing process</li>
+    		</ul>
+    	</p>
+    	<p>
+    		Our ideal candidate has experience with circuit design and PCB layout. On a daily basis, you would be interacting with our lead electrical engineer to design, layout, bring up, and troubleshoot circuit boards. Ultimately, we expect you to <strong>grow into</strong> a position where you will be able to own the full process of developing, prototyping, manufacturing, and supporting PCBs of your own design.
+    	</p>
+    	<h4>Day to Day Activities</h4>
+    	<p>On a typical day, you will do several of the following</p>
+    	<ul>
+    		<li>Designing circuits in PCB layout software</li>
+    		<li>Sitting in front of an espresso machine, bringing up circuit boards you have designed</li>
+    		<li>Interpreting bugs from the field </li>
+    		<li>Interacting with clients</li>
+    		<li>Translating user needs into hardware requirements</li>
+    	</ul>
+
+    	<h4>Company Perks</h4>
+    	<ul>
+    		<li>Quarterly trips to Florence, Italy.</li>
+    		<li>Flexible schedule</li>
+    		<li>Part time options available</li>
+            <li>Ability to work on side projects</li>
+            <li>Equity in the company</li>
+    	</ul>
+        <p>To apply, e-mail <a href="mailto:careers@luminairecoffee.com">careers@luminairecoffee.com</a> with some details about why you are be a good fit.
+        </p>
+	</div>
+</div>
+<br>
+<div class="row-fluid">
+    <div class="span9">
+        <h3>Technician</h3>
+        <h5>Location: Seattle</h5>
+        <h5>Part-time with a possibility of transitioning to full time</h5>
+        <p>
+            We're looking for a technician to join our team. Here's some things you'd be doing:
+        </p>
+            <ul>
+                <li>Work with our team of engineers to design and run tests of prototype equipment</li>
+                <li>Manage and organize our coffee lab</li>
+                <li>Run tests on failed equipment</li>
+                <li>Be a part of the design process for new coffee equipment</li>
+            </ul>
+        <p>
+            Experience with coffee is a plus. Some experience with soldering would also be helpful, but not necessary. We expect that this position will involve a lot of on-the-job training.
+        </p>
+        <p>To apply, e-mail <a href="mailto:careers@luminairecoffee.com">careers@luminairecoffee.com</a> with some details about why you are be a good fit.
+        </p>
+    </div>
+</div>
+      </div>
+    </body>
+    <footer>
+      <footer class="footer">
+  <div class="container">
+    <p>| Boston, MA | Seattle, WA |</p>
+    <p>Designed and built by the Luminaire Coffee team with help from <a href="http://getbootstrap.com/">Twitter Bootstrap</a> and <a href="http://jekyllrb.com">Jekyll</a>.
+    </p>
+  </div>
+</footer>	
+    </footer>
+
+</html>
+
