@@ -240,6 +240,12 @@ section h1{
 .footer a{
   color: #333;
 }
+.purchase_details_img, .purchase_details_button
+{
+  display:inline-block;
+  vertical-align:middle;
+  height:100%;
+}
 
   @media (max-width: 978px) {
     .page-header h1{
