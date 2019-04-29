@@ -297,7 +297,3 @@ section h1{
 
       }
     }
-form#formaction input[type="text"], form#formaction textarea, form#formaction input[type="email"]
-{
-    min-width:350px;
-}
