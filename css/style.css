@@ -246,6 +246,14 @@ section h1{
   vertical-align:middle;
   height:100%;
 }
+.purchase_details_img
+{
+    width:210px;
+}
+.distributor
+{
+    padding-bottom:40px;
+}
 
   @media (max-width: 978px) {
     .page-header h1{
