@@ -229,6 +229,9 @@ section h1{
 .logo img.small{
   height:40px;
 }
+.logo img.tiny{
+  height: 27px;
+}
 
 .btn-next{
   margin-left:0;
