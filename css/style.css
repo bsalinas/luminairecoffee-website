@@ -1,5 +1,5 @@
 
- .jumbotron{
+.jumbotron{
   /*background: -webkit-linear-gradient(45deg, rgb(102,101,102) 5%,rgb(48,44,45) 75%);*/
   background-image: linear-gradient(left bottom, rgb(102,101,102) 5%, rgb(46,42,43) 75%);
 background-image: -o-linear-gradient(left bottom, rgb(102,101,102) 5%, rgb(46,42,43) 75%);
