@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+<title>Luminaire Coffee - Declarations of Conformity</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="declarations of conformity">
+<meta name="author" content="Luminaire Coffee">
+
+<!-- Le styles -->
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="/css/docs.css" rel="stylesheet">
+<link href="/css/style.css" rel="stylesheet">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="/img/luminaire_favicon.ico">
+<script src="/js/jquery-1.9.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8H4TF92ZKD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8H4TF92ZKD');
+</script>
+<script>
+  $(document).ready(function(){
+    $('.btn[data-toggle=collapse]').click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        if($(this).hasClass('expanded')){
+          $('.nav-collapse.collapse.in').hide().removeClass('in');
+          $(this).removeClass('expanded');  
+        }
+        else{
+          $(this).addClass('expanded');
+          $('.nav-collapse').show();
+          $('.nav-collapse').addClass('in');
+          $('.nav-collapse').css('height','168px');
+        }
+        
+
+    });
+    // side bar
+    $('.bs-docs-sidenav').affix({
+      offset: {
+        top: function () { 
+          return $(window).width() <= 980 ? 280 : 220;
+        }
+      , bottom: 220
+      }
+    });
+  });
+</script>
+    </head>
+    <body data-spy="scroll" data-target=".bs-docs-sidebar">
+      <div class="navbar navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a href="/"><img src="/img/luminaire_logo_large.png" class="visible-phone" style="display: inline; width: 100px; margin-left:10px; margin-top:5px; float: left;"></img></a>
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a class="brand hidden-phone" href="/"></a></li>
+          
+            
+              <li class="">
+            
+            <a href="/projects/">Projects</a></li>
+          
+            
+              <li class="">
+            
+            <a href="/services/">Services</a></li>
+          
+            
+              <li class="">
+            
+            <a href="/shottimer/">Shot Timer</a></li>
+          
+            
+              <li class="">
+            
+            <a href="/team/">Team</a></li>
+          
+            
+              <li class="">
+            
+            <a href="/careers/">Careers</a></li>
+          
+            
+              <li class="active">
+            
+            <a href="/contact/">Contact Us</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+      <header class="jumbotron subhead" id="overview">
+      <div class="container">
+        <h1>Declarations of Conformity</h1>
+        <p class="lead"></p>
+      </div>
+     </header>
+     <div class="container">
+      <div class="row-fluid">   
+  	<div class="span9">
+		<h2>Products</h2>
+		<p><a href="/img/shottimer-doc-english.pdf" download>Shot Timer</a></p>
+	</div>
+</div>
+      </div>
+    </body>
+    <footer>
+      <footer class="footer">
+  <div class="container">
+    <p>| Seattle | Austin | NYC |</p>
+    <p>Designed and built by the Luminaire Coffee team with help from <a href="http://getbootstrap.com/">Twitter Bootstrap</a> and <a href="http://jekyllrb.com">Jekyll</a>.
+    </p>
+  </div>
+</footer>	
+    </footer>
+
+</html>
+
