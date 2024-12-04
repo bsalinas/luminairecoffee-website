@@ -251,11 +251,40 @@ section h1{
 }
 .purchase_details_img
 {
-    width:210px;
+    width:200px;
+    padding-bottom:5px;
+}
+.purchase_details_img img{
+  float:left;
 }
 .distributor
 {
+    padding-bottom:35px;
+}
+@media (max-width:500px)
+{
+  .distributor{
     padding-bottom:40px;
+  }
+  .purchase_details_img, .purchase_details_button
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .purchase_details_img
+  {
+    width:auto;
+    padding-bottom:12px;
+  }
+  .purchase_details_img img{
+    float:none;
+    padding-left:0!important;
+  }
+
 }
 
   @media (max-width: 978px) {
